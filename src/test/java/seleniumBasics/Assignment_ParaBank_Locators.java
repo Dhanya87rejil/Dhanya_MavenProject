@@ -11,8 +11,11 @@ public class Assignment_ParaBank_Locators {
 	driver.get("https://parabank.parasoft.com/parabank/index.htm");
 	//Header Panel - left menu
 	driver.findElement(By.cssSelector("li[class='Solutions']"));
-	//driver.findElement(By.cssSelector("ul[class='leftmenu'] > li >  a[href='about.htm']"));
-	
+	driver.findElement(By.cssSelector("ul[class='leftmenu'] > li >  a[href*='about.htm']"));
+	driver.findElement(By.cssSelector("ul[class='leftmenu'] > li >  a[href*='services.htm']"));
+	driver.findElement(By.cssSelector("ul[class='leftmenu'] > li >  a[href*='products.jsp']"));	
+	driver.findElement(By.cssSelector("ul[class='leftmenu'] > li >  a[href*='contacts.jsp']"));
+	driver.findElement(By.cssSelector("ul[class='leftmenu'] > li >  a[href*='admin.htm']"));
 	//customer login
 	driver.findElement(By.name("username"));
 	driver.findElement(By.name("password"));
@@ -30,17 +33,17 @@ public class Assignment_ParaBank_Locators {
 	driver.findElement(By.linkText("Site Map"));
 	driver.findElement(By.linkText("Forum"));
 	driver.findElement(By.linkText("Services"));
-	//driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li>a[href='index.htm']"));
-	//driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li>a[href='about.htm']"));
-	//driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li>a[href='services.htm']"));
+	driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li>a[href*='index.htm']"));
+	driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li>a[href*='about.htm']"));
+	driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li>a[href*='services.htm']"));
 	driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li>a[href='http://www.parasoft.com/jsp/products.jsp']"));
 	driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li>a[href='http://www.parasoft.com/jsp/pr/contacts.jsp']"));
 	driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li>a[href='http://forums.parasoft.com/']"));
-	//driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li>a[href='sitemap.htm']"));
-	//driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li>a[href='contact.htm']"));
+	driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li>a[href*='sitemap.htm']"));
+	driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li>a[href*='contact.htm']"));
 
-	//menu links(top and bottom)
 	
+	driver.close();
 	
 	
 	
