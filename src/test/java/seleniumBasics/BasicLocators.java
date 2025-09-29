@@ -34,7 +34,6 @@ public class BasicLocators {
 		// 9: Locate the 'How Search Works' using linkText locator
 		driver.findElement(By.linkText("About")).click();
 		
-		
 
 		// 10: Locate the 'How Search Works' using partialLinkText locator
 		driver.findElement(By.partialLinkText("How Search")).click();
